@@ -1,0 +1,40 @@
+@import url('https://webfontworld.github.io/yangheeryu/GowunBatang.css');
+
+body,
+html {
+    font-family: 'GowunBatang', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: -0.08rem;
+    color: #3b3b3b;
+    background-color: #fbfbfb;
+    word-break: break-all;
+overflow-x: hidden;
+}
+
+#wrap {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+@media screen and (max-width: 1240px) {
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    }
+
+
+@media screen and (max-width: 738px) {
+
+}
+
+@media screen and (max-width: 490px) {
+
+}

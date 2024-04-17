@@ -1,0 +1,799 @@
+@import url(../css/reset.css);
+@import url(../css/default.css);
+
+.header .header_wrap {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    justify-items: center;
+    height: 10rem;
+    align-items: center;
+}
+
+.header .logo {
+    width: 13.5rem;
+    height: 6.5rem;
+    position: relative;
+}
+
+.header .logo a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 0;
+    line-height: 0;
+    width: 13.5rem;
+    height: 6.5rem;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10rem auto;
+}
+.header .gnb {
+    display: none;
+}
+
+.header .btn-menu {
+    font-size: 0;
+    line-height: 0;
+    width: 6.5rem;
+    height: 6.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74.98' height='47.38' viewBox='0 0 74.98 47.38'%3E%3Cg id='구성_요소_1_1' data-name='구성 요소 1 – 1' transform='translate(1 1)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M1658,64.059h72.98' transform='translate(-1658 -64.059)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='7'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M1658,64.059h42.747' transform='translate(-1628.768 -41.369)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_3' data-name='패스 3' d='M1658,64.059h72.98' transform='translate(-1658 -18.679)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='7'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 3.5rem auto;
+}
+
+.header.open .btn-menu {
+    display: none;
+}
+
+.header.open .gnb {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 10rem;
+    background-color: #fbfbfb;
+    z-index: 100;
+}
+
+.header.open .gnb > ul > li > a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    text-decoration-thickness: 0.1rem;
+}
+.header .btn-close{
+    display: none;}
+
+.header.open .btn-close {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    width: 6.5rem;
+    height: 6.5rem;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28.915' height='28.217' viewBox='0 0 28.915 28.217'%3E%3Cg id='그룹_57' data-name='그룹 57' transform='translate(-679.242 -43.802)'%3E%3Cpath id='패스_90' data-name='패스 90' d='M1658,64.059h37.9' transform='translate(-446.439 -1173.171) rotate(45)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='2'/%3E%3Cpath id='패스_92' data-name='패스 92' d='M1658,64.059h37.9' transform='translate(-537.731 1198.398) rotate(-45)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+background-repeat: no-repeat no-repeat;
+background-position: center center;
+    background-size: 3.5rem auto;
+}
+
+.header .logo a {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    width: 13.5rem;
+    height: 6.5rem;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10rem auto;
+}
+
+
+.visual {
+    text-align: center;
+    width: 81rem;
+    border-radius: 5rem;
+    background-image: url(../images/visual.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    margin: 9rem auto;
+}
+
+.visual h2 {
+    font-size: 3.5rem;
+    padding-top: 9rem;
+    line-height: 6rem;
+    position: relative;
+}
+
+.visual h2::after {
+    position: absolute;
+    bottom: -3rem;
+    left: calc(50% - 4rem);
+    background-color: #3b3b3b;
+    width: 8rem;
+    height: 0.1rem;
+    content: '';
+}
+
+.visual p {
+    display: block;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+}
+
+.church_vision {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 14.5rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.church_vision::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 100%;
+    background-color: #f4f4f4;
+    transform: translate(-50%, 0);
+    content: '';
+}
+
+.church_vision h2 {
+    display: none;
+}
+
+.church_vision .vision_info {
+    display: block;
+    line-height: 6rem;
+    margin-bottom: 16rem;
+    position: relative;
+}
+
+.church_vision .vision_info::after {
+    position: absolute;
+    bottom: -8rem;
+    left: calc(50% - 4rem);
+    background-color: #3b3b3b;
+    width: 8rem;
+    height: 0.1rem;
+    content: '';
+}
+
+.church_vision .vision_info em {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.church_vision .vision_detail {
+    font-size: 2.5rem;
+    margin-top: 28rem;
+    text-align: center;
+}
+
+.church_vision .vision_detail ul {
+    display: block;
+    padding-bottom: 36rem;
+}
+
+.church_vision .vision_detail ul>li {
+    position: relative;
+}
+
+.church_vision .vision_detail .gospel {
+    margin-left: calc(50% - 30rem);
+    float: left;
+}
+
+.church_vision .vision_detail .gospel::before {
+    position: absolute;
+    top: -15rem;
+    left: 0;
+    width: 26rem;
+    height: 27rem;
+    background-image: url(../images/vision01.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .kingdom {
+    margin-left: 16rem;
+    float: left;
+}
+
+.church_vision .vision_detail .kingdom::before {
+    position: absolute;
+    top: -15rem;
+    left: -5rem;
+    width: 20rem;
+    height: 26rem;
+    background-image: url(../images/vision02.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .community {
+    margin-top: 25rem;
+    margin-left: calc(50% - 46rem);
+    clear: left;
+    float: left;
+}
+
+.church_vision .vision_detail .community::before {
+    position: absolute;
+    top: -18rem;
+    left: -12rem;
+    width: 30rem;
+    height: 26rem;
+    background-image: url(../images/vision03.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .faith,
+.church_vision .vision_detail .truth {
+    margin-left: 28rem;
+    float: left;
+    margin-top: 25rem;
+    z-index: 100;
+}
+
+.church_vision .vision_detail .faith::before {
+    position: absolute;
+    top: -18rem;
+    left: -12rem;
+    width: 39rem;
+    height: 30rem;
+    z-index: 1;
+    background-image: url(../images/vision04.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .truth::before {
+    position: absolute;
+    top: -19rem;
+    left: -5rem;
+    width: 23rem;
+    height: 28rem;
+    background-image: url(../images/vision05.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.service_info h2,
+.notice h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    text-align: center;
+    position: relative;
+}
+
+.service_info h2::before,
+.notice h2::before {
+    position: absolute;
+    bottom: -3rem;
+    left: calc(50% - 4rem);
+    background-color: #3b3b3b;
+    width: 8rem;
+    height: 0.1rem;
+    content: '';
+}
+
+.service_info .service_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 24rem;
+    position: relative;
+}
+
+.service_info {
+    position: relative;
+}
+
+.service_info::before {
+    position: absolute;
+    bottom: -26rem;
+    left: 50%;
+    width: 200%;
+    transform: translate(-50%, 0);
+    height: 25%;
+    background-image: url(../images/service_bg.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    content: '';
+}
+
+
+.service_info h3 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    font-weight: 700;
+
+}
+
+.service_info .time_info {
+    margin-top: 1rem;
+}
+
+.service_info .time_info .sunday_service {
+    margin-bottom: 16rem;
+    position: relative;
+}
+
+.service_info .time_info .sunday_service::before {
+    position: absolute;
+    bottom: -11rem;
+    left: 50%;
+    background-color: #3b3b3b;
+    width: 0.1rem;
+    height: 6rem;
+    content: '';
+}
+
+.service_info .sermon .youtube_wrap {
+    display: block;
+    width: 68rem;
+}
+
+.service_info .sermon .youtube_wrap .btn-youtube {
+    display: none;
+}
+
+.service_info .sermon .youtube_wrap iframe {
+    display: block;
+    border-radius: 2rem;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.service_info .time_info span {
+    display: block;
+}
+
+.notice h2 {
+    padding-top: 20rem;
+}
+
+.notice ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.8rem;
+    margin-bottom: 12rem;
+    text-align: center;
+
+    position: relative;
+}
+
+.notice ul li {
+    width: calc(33.3% - 10rem);
+    aspect-ratio: 1 / 1;
+}
+
+.notice ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 65%;
+    color: #fbfbfb;
+    box-shadow: 0 0.3rem 0.3rem #666;
+    font-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5rem;
+}
+
+.notice ul .jubo {
+    background-image: url(../images/notice01.png);
+}
+
+.notice ul .essay {
+    background-image: url(../images/notice02.png);
+}
+
+.notice ul .meditation {
+    background-image: url(../images/notice03.png);
+}
+
+.footer {
+    padding: 5rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 5rem;
+    border-top: 0.1rem solid #f2f2f2;
+    box-shadow: 0 -0.2rem 0.2rem #f3f3f3;
+}
+
+@media screen and (max-width: 1240px) {
+
+    html,
+    body {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    html,
+    body {
+        font-size: 7px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    html,
+    body {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 738px) {
+
+    html,
+    body {
+        font-size: 6px;
+    }
+
+    .header_wrap {
+        height: 12rem;
+    }
+
+    .header .logo a {
+        background-size: 12rem auto;
+    }
+
+    .header .btn-menu {
+        font-size: 0;
+        line-height: 0;
+        width: 6.5rem;
+        height: 6.5rem;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74.98' height='47.38' viewBox='0 0 74.98 47.38'%3E%3Cg id='구성_요소_1_1' data-name='구성 요소 1 – 1' transform='translate(1 1)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M1658,64.059h72.98' transform='translate(-1658 -64.059)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M1658,64.059h42.747' transform='translate(-1628.768 -41.369)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_3' data-name='패스 3' d='M1658,64.059h72.98' transform='translate(-1658 -18.679)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3C/g%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        background-size: 5rem auto;
+    }
+
+    .visual {
+        aspect-ratio: 1 / 1.5;
+        background-size: cover;
+        margin: 16rem auto
+    }
+
+    .visual h2 {
+        font-size: 4rem;
+        padding-top: 13rem;
+        line-height: 6rem;
+        position: relative;
+    }
+
+    .visual h2::after {
+        bottom: -5rem;
+        width: 8rem;
+    }
+
+    .visual p {
+        margin-top: 10rem;
+        font-size: 3rem;
+    }
+
+    .church_vision {
+        padding-bottom: 55rem;
+    }
+
+
+    .church_vision .vision_info {
+        display: block;
+        line-height: 6rem;
+        margin-bottom: 25rem;
+        position: relative;
+    }
+
+    .church_vision .vision_info::after {
+        position: absolute;
+        bottom: -10rem;
+        left: calc(50% - 4rem);
+        background-color: #3b3b3b;
+        width: 8rem;
+        height: 0.1rem;
+        content: '';
+    }
+
+    .church_vision .vision_info em {
+        font-weight: 700;
+        font-size: 3.5rem;
+    }
+
+    .church_vision .vision_detail {
+        margin-top: 40rem;
+        text-align: center;
+    }
+
+    .church_vision .vision_detail ul {
+        display: block;
+        padding-bottom: 36rem;
+    }
+
+
+    .church_vision .vision_detail .gospel {
+        margin-left: calc(50% - 30rem);
+        float: left;
+    }
+
+    .church_vision .vision_detail .gospel::before {
+        position: absolute;
+        top: -15rem;
+        left: 0;
+        width: 26rem;
+        height: 27rem;
+        background-image: url(../images/vision01.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        background-size: contain;
+        content: '';
+    }
+
+    .church_vision .vision_detail .kingdom {
+        margin-left: 20rem;
+        margin-top: 15rem;
+        float: left;
+    }
+
+    .church_vision .vision_detail .kingdom::before {
+        position: absolute;
+        top: -15rem;
+        left: -5rem;
+        width: 20rem;
+        height: 26rem;
+        background-image: url(../images/vision02.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        background-size: contain;
+        content: '';
+    }
+
+    .church_vision .vision_detail .community {
+        margin-top: 38rem;
+        margin-left: calc(50% - 28rem);
+        float: left;
+    }
+
+    .church_vision .vision_detail .community::before {
+        position: absolute;
+        top: -18rem;
+        left: -12rem;
+        width: 30rem;
+        height: 26rem;
+        background-image: url(../images/vision03.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        background-size: contain;
+        content: '';
+    }
+
+    .church_vision .vision_detail .faith {
+        margin-left: 10rem;
+        float: left;
+        margin-top: 15rem;
+        z-index: 100;
+    }
+
+    .church_vision .vision_detail .truth {
+        margin-left: 15rem;
+        margin-top: 45rem;
+    }
+
+    .church_vision .vision_detail .faith::before {
+        position: absolute;
+        top: -22rem;
+        left: -18rem;
+        width: 39rem;
+        height: 30rem;
+        z-index: 1;
+        background-image: url(../images/vision03_mo.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        background-size: contain;
+        content: '';
+    }
+
+    .church_vision .vision_detail .truth::before {
+        position: absolute;
+        top: -19rem;
+        left: -5rem;
+        width: 23rem;
+        height: 28rem;
+        background-image: url(../images/vision05.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        background-size: contain;
+        content: '';
+    }
+
+    .service_info {
+        margin: 25rem 0rem 7rem 0rem;
+    }
+
+    .service_info .service_wrap {
+        justify-content: space-between;
+        margin: 0 7rem;
+    }
+
+    .service_info h2 {
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 5rem 7rem 5rem 7rem;
+        text-align: left;
+        position: relative;
+    }
+
+
+    .service_info h2::before {
+        display: none;
+    }
+
+    .service_info h3 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        font-weight: 700;
+
+    }
+
+    .service_info .time_info {
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 4rem;
+        width: calc(100% - 40rem);
+    }
+
+    .service_info .time_info .sunday_service {
+        margin-bottom: 16rem;
+        position: relative;
+    }
+
+    .service_info .time_info .sunday_service::before {
+        display: none;
+    }
+
+    .service_info .time_info .worship_add {
+        display: none;
+    }
+
+    .service_info .sermon h3 {
+        display: none;
+    }
+
+    .service_info .sermon .youtube_wrap {
+        display: block;
+        width: 40rem;
+        aspect-ratio: 2 / 1;
+    }
+
+    .service_info .sermon .youtube_wrap iframe {
+        display: none;
+    }
+
+
+
+    .service_info .sermon .youtube_wrap .btn-youtube {
+        display: block;
+        ;
+        font-size: 4rem;
+        padding: 2rem 8rem;
+        border-radius: 2rem;
+        color: #fbfbfb;
+        background-color: #1D6E4F;
+    }
+
+    .service_info::before {
+        display: none;
+    }
+
+    .notice h2 {
+        text-align: left;
+        padding-top: 0;
+        margin: 5rem 0 5rem 7rem;
+    }
+
+    .notice h2::before {
+        display: none;
+    }
+
+    .notice ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.8rem;
+        margin-bottom: 5rem;
+        text-align: right;
+        position: relative;
+    }
+
+    .notice ul li {
+        width: calc(100% - 14rem);
+        margin-left: 7rem;
+        aspect-ratio: auto;
+        margin-bottom: 2rem;
+    }
+
+    .notice ul li br {
+        display: none;
+    }
+
+    .notice ul li a {
+
+        padding-top: 20rem;
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+        color: #fbfbfb;
+        font-weight: 700;
+        font-size: 5rem;
+        background-position: top left;
+        background-size: cover;
+        border-radius: 1rem;
+    }
+
+    .notice ul .jubo {
+        background-image: url(../images/notice01_mo.png);
+    }
+
+    .notice ul .essay {
+        background-image: url(../images/notice02_mo.png);
+    }
+
+    .notice ul .meditation {
+        background-image: url(../images/notice03_mo.png);
+    }
+
+    .footer {
+        padding: 5rem 0;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 4rem;
+        border-top: 0.1rem solid #f2f2f2;
+        box-shadow: 0 -0.2rem 0.2rem #f3f3f3;
+    }
+}
+
+@media screen and (max-width: 512px) {
+
+    html,
+    body {
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width: 418px) {
+
+    html,
+    body {
+        font-size: 4px;
+    }
+}
