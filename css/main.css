@@ -1,799 +1,651 @@
 @import url(../css/reset.css);
 @import url(../css/default.css);
 
-.header .header_wrap {
-    display: grid;
-    grid-template-columns: 9fr 1fr;
-    justify-items: center;
-    height: 10rem;
-    align-items: center;
+h2 {
+	font-size: 4rem;
+	font-weight: 900;
+	margin-bottom: 1rem;
+	padding-top: 10rem;
+	display: block;
+}
+h3 {
+	font-size: 2.2rem;
+}
+.skipNav {
+	position: absolute;
+	top: -10.5em;
+	left: 0;
+	z-index: 2;
+	font-size: 1.6rem;
 }
 
-.header .logo {
-    width: 13.5rem;
-    height: 6.5rem;
-    position: relative;
+.more {
+	float: right;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	margin-right: 4rem;
+	font-weight: 500;
+	font-size: 2rem;
+	position: relative;
+}
+.more::after {
+	position: absolute;
+	width: 2.5rem;
+	height: 2.5rem;
+	top: 0;
+	right: -3rem;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.926' height='24.926' viewBox='0 0 24.926 24.926'%3E%3Cg id='그룹_85' data-name='그룹 85' transform='translate(-0.065 -0.074)'%3E%3Cg id='그룹_104' data-name='그룹 104'%3E%3Cpath id='패스_210' data-name='패스 210' d='M24.181,24H11.124a.315.315,0,0,1,0-.631H24.181a.315.315,0,0,1,0,.631' transform='translate(-5.124 -11.143)' fill='%232b2b2b'/%3E%3Cpath id='패스_211' data-name='패스 211' d='M28.715,24.295a.315.315,0,0,1-.224-.538l3.679-3.679L28.492,16.4a.316.316,0,0,1,.447-.446l3.9,3.9a.316.316,0,0,1,0,.446l-3.9,3.9a.315.315,0,0,1-.223.093' transform='translate(-13.569 -7.541)' fill='%232b2b2b'/%3E%3Cpath id='패스_212' data-name='패스 212' d='M12.463,24.926A12.463,12.463,0,1,1,24.926,12.463,12.477,12.477,0,0,1,12.463,24.926m0-24.3A11.832,11.832,0,1,0,24.3,12.463,11.846,11.846,0,0,0,12.463.631' transform='translate(0.065 0.074)' fill='%232b2b2b'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat no-repeat;
+	background-position: center center;
+	background-size: 2rem auto;
+	content: "";
 }
 
-.header .logo a {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    font-size: 0;
-    line-height: 0;
-    width: 13.5rem;
-    height: 6.5rem;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10rem auto;
+.header .header_top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
+}
+.header .header_top .top_family_site {
+	display: flex;
+	align-items: space-between;
+}
+.header .header_top li {
+	padding: 1.5rem 2rem;
+	position: relative;
+}
+
+.header .header_top .tnb_top {
+	display: flex;
+	align-items: center;
+}
+
+.header .header_top .top_family_site {
+	display: flex;
+	align-items: center;
+}
+.header .header_top .top_family_site li::after {
+	position: absolute;
+	top: calc(50% - 0.5rem);
+	right: -0.25rem;
+	width: 0.1rem;
+	height: 1rem;
+	background-color: #3b3b3b;
+	content: "";
+}
+.header .header_top .top_family_site li:last-child::after {
+	display: none;
+}
+
+.header .header_top .tnb_top li:first-child::after {
+	position: absolute;
+	top: calc(50% - 0.5rem);
+	right: -0.25rem;
+	width: 0.1rem;
+	height: 1rem;
+	background-color: #3b3b3b;
+	content: "";
+}
+
+.header .gnb_wrap {
+	justify-content: space-between;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fbfbfb;
+	background-color: #003831;
 }
 .header .gnb {
-    display: none;
+	display: flex;
+	justify-content: space-between;
+}
+.header .gnb .logo {
+	width: 19rem;
+	height: 7.5rem;
+}
+.header .gnb .logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	line-height: 0;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='133.5' height='41.052' viewBox='0 0 133.5 41.052'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_88' data-name='사각형 88' width='133.5' height='41.052' fill='%23fbfbfb'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_84' data-name='그룹 84' transform='translate(0 0)'%3E%3Cpath id='패스_343' data-name='패스 343' d='M51.412,22.126V17.319h.969v2.136l1.97-2.136h1.308l-1.817,1.869,1.909,2.938H54.494L53.17,19.864l-.789.807v1.454Z' transform='translate(-15.144 -5.158)' fill='%23fbfbfb'/%3E%3Cg id='그룹_83' data-name='그룹 83' transform='translate(0 0)'%3E%3Cg id='그룹_82' data-name='그룹 82' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_344' data-name='패스 344' d='M57.646,20.688a1.8,1.8,0,0,1,.214-.847,1.487,1.487,0,0,1,.609-.624A1.8,1.8,0,0,1,59.35,19a1.642,1.642,0,0,1,1.229.488,1.688,1.688,0,0,1,.48,1.235,1.712,1.712,0,0,1-.485,1.248,1.64,1.64,0,0,1-1.219.495,1.921,1.921,0,0,1-.868-.206,1.416,1.416,0,0,1-.628-.6,2.014,2.014,0,0,1-.214-.969m.9.047a1.1,1.1,0,0,0,.235.754.759.759,0,0,0,1.147,0,1.114,1.114,0,0,0,.232-.761,1.09,1.09,0,0,0-.232-.747.757.757,0,0,0-1.147,0,1.094,1.094,0,0,0-.235.754' transform='translate(-16.916 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_345' data-name='패스 345' d='M64.275,22.395H63.4V19.074h.817v.472a1.355,1.355,0,0,1,.378-.439A.693.693,0,0,1,64.972,19a1.137,1.137,0,0,1,.579.163l-.269.764a.777.777,0,0,0-.415-.144.5.5,0,0,0-.314.1.7.7,0,0,0-.2.368,5.232,5.232,0,0,0-.073,1.114Z' transform='translate(-18.604 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_346' data-name='패스 346' d='M68.791,21.338l.876.146a1.444,1.444,0,0,1-.533.732,1.562,1.562,0,0,1-.909.25,1.483,1.483,0,0,1-1.28-.565,1.908,1.908,0,0,1-.328-1.143,1.829,1.829,0,0,1,.432-1.292A1.418,1.418,0,0,1,68.139,19a1.463,1.463,0,0,1,1.166.489,2.159,2.159,0,0,1,.408,1.5h-2.2a.887.887,0,0,0,.213.606.666.666,0,0,0,.507.218.539.539,0,0,0,.345-.112.7.7,0,0,0,.213-.36m.051-.891a.837.837,0,0,0-.194-.577.633.633,0,0,0-.932.011.808.808,0,0,0-.186.567Z' transform='translate(-19.549 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_347' data-name='패스 347' d='M72.562,20.089l-.789-.145a1.236,1.236,0,0,1,.463-.713,1.7,1.7,0,0,1,.978-.23,2.109,2.109,0,0,1,.877.139.862.862,0,0,1,.406.353,1.805,1.805,0,0,1,.119.786L74.6,21.3a3.758,3.758,0,0,0,.042.646,1.961,1.961,0,0,0,.158.445h-.869a2.6,2.6,0,0,1-.085-.26c-.016-.053-.025-.086-.032-.1a1.577,1.577,0,0,1-.483.327,1.4,1.4,0,0,1-.548.108,1.137,1.137,0,0,1-.809-.276.927.927,0,0,1-.3-.7.955.955,0,0,1,.134-.5.9.9,0,0,1,.378-.338,3.067,3.067,0,0,1,.7-.2,4.766,4.766,0,0,0,.858-.215v-.088a.456.456,0,0,0-.127-.362.764.764,0,0,0-.478-.109.635.635,0,0,0-.37.093.653.653,0,0,0-.214.325m1.19.711a5.456,5.456,0,0,1-.54.134,1.622,1.622,0,0,0-.483.154.365.365,0,0,0-.174.308.423.423,0,0,0,.139.319.483.483,0,0,0,.353.134.768.768,0,0,0,.456-.156.554.554,0,0,0,.211-.29,1.625,1.625,0,0,0,.036-.427Z' transform='translate(-21.034 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_348' data-name='패스 348' d='M83.158,21.9h-1l-.393-1.043H79.931L79.551,21.9H78.57l1.783-4.582h.981Zm-1.7-1.82-.63-1.693-.617,1.693Z' transform='translate(-23.056 -5.082)' fill='%23fbfbfb'/%3E%3Cpath id='패스_349' data-name='패스 349' d='M86.574,22.395H85.7V19.074h.817v.472a1.389,1.389,0,0,1,.376-.439.7.7,0,0,1,.38-.105,1.126,1.126,0,0,1,.577.163l-.268.764a.777.777,0,0,0-.416-.144.488.488,0,0,0-.313.1.69.69,0,0,0-.2.368,5.3,5.3,0,0,0-.073,1.114Z' transform='translate(-25.148 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_350' data-name='패스 350' d='M90.647,18.616v.7h-.6v1.337a3.253,3.253,0,0,0,.018.473.181.181,0,0,0,.077.11.242.242,0,0,0,.149.045,1.137,1.137,0,0,0,.35-.084l.076.683a1.718,1.718,0,0,1-.69.132,1.1,1.1,0,0,1-.427-.079.63.63,0,0,1-.278-.206.81.81,0,0,1-.123-.343,4.241,4.241,0,0,1-.028-.62V19.314h-.406v-.7h.406v-.658l.875-.517v1.175Z' transform='translate(-26.049 -5.118)' fill='%23fbfbfb'/%3E%3Cpath id='패스_351' data-name='패스 351' d='M91.855,21.452l.883-.134a.633.633,0,0,0,.228.385.761.761,0,0,0,.477.133.858.858,0,0,0,.509-.125.282.282,0,0,0,.115-.235A.225.225,0,0,0,94,21.311a.7.7,0,0,0-.291-.116,4.706,4.706,0,0,1-1.344-.427.853.853,0,0,1-.394-.746.924.924,0,0,1,.341-.727A1.589,1.589,0,0,1,93.369,19a1.844,1.844,0,0,1,1.012.222,1.137,1.137,0,0,1,.456.654l-.831.153a.5.5,0,0,0-.2-.295.726.726,0,0,0-.422-.1.957.957,0,0,0-.5.1.215.215,0,0,0-.1.179.2.2,0,0,0,.087.16,3.3,3.3,0,0,0,.819.247,2.422,2.422,0,0,1,.978.391.813.813,0,0,1,.275.652,1,1,0,0,1-.38.782,1.688,1.688,0,0,1-1.126.328,1.866,1.866,0,0,1-1.073-.272,1.268,1.268,0,0,1-.517-.743' transform='translate(-26.954 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_352' data-name='패스 352' d='M99.824,21.9V17.319h1.386l.831,3.124.818-3.124h1.388V21.9h-.856l0-3.607-.909,3.607h-.887l-.907-3.607,0,3.607Z' transform='translate(-29.293 -5.082)' fill='%23fbfbfb'/%3E%3Cpath id='패스_353' data-name='패스 353' d='M107.928,20.089l-.791-.145a1.227,1.227,0,0,1,.463-.713,1.7,1.7,0,0,1,.976-.23,2.1,2.1,0,0,1,.878.139.871.871,0,0,1,.408.353,1.81,1.81,0,0,1,.117.786l-.014,1.025a3.586,3.586,0,0,0,.043.646,1.824,1.824,0,0,0,.157.445H109.3a2.6,2.6,0,0,1-.085-.26c-.016-.053-.025-.086-.032-.1a1.577,1.577,0,0,1-.483.327,1.383,1.383,0,0,1-.546.108,1.14,1.14,0,0,1-.81-.276.988.988,0,0,1-.16-1.2.887.887,0,0,1,.378-.338,3.035,3.035,0,0,1,.7-.2,4.753,4.753,0,0,0,.856-.215v-.088a.453.453,0,0,0-.126-.362.764.764,0,0,0-.478-.109.532.532,0,0,0-.584.418m1.187.711a5.157,5.157,0,0,1-.54.134,1.624,1.624,0,0,0-.481.154.367.367,0,0,0-.172.308.427.427,0,0,0,.138.319.486.486,0,0,0,.353.134.77.77,0,0,0,.456-.156.539.539,0,0,0,.211-.29,1.71,1.71,0,0,0,.035-.427Z' transform='translate(-31.411 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_354' data-name='패스 354' d='M115.41,22.395h-.876V20.7a2.662,2.662,0,0,0-.057-.7.486.486,0,0,0-.182-.245.513.513,0,0,0-.3-.088.7.7,0,0,0-.407.125.641.641,0,0,0-.249.332,2.95,2.95,0,0,0-.064.763v1.5h-.878V19.074h.818v.488a1.353,1.353,0,0,1,1.617-.457.878.878,0,0,1,.36.268.93.93,0,0,1,.172.368,2.774,2.774,0,0,1,.048.591Z' transform='translate(-32.981 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_355' data-name='패스 355' d='M118.486,20.089l-.791-.145a1.247,1.247,0,0,1,.464-.713,1.7,1.7,0,0,1,.979-.23,2.119,2.119,0,0,1,.878.139.877.877,0,0,1,.4.353,1.8,1.8,0,0,1,.119.786l-.014,1.025a3.617,3.617,0,0,0,.042.646,1.961,1.961,0,0,0,.158.445h-.87c-.023-.059-.051-.146-.084-.26-.016-.053-.026-.086-.032-.1a1.589,1.589,0,0,1-.482.327,1.4,1.4,0,0,1-.548.108,1.136,1.136,0,0,1-.81-.276.927.927,0,0,1-.3-.7.942.942,0,0,1,.134-.5.887.887,0,0,1,.378-.338,3.056,3.056,0,0,1,.7-.2,4.71,4.71,0,0,0,.857-.215v-.088a.454.454,0,0,0-.127-.362.758.758,0,0,0-.476-.109.628.628,0,0,0-.37.093.637.637,0,0,0-.215.325m1.188.711a5.253,5.253,0,0,1-.54.134,1.608,1.608,0,0,0-.481.154.365.365,0,0,0-.174.308.432.432,0,0,0,.138.319.491.491,0,0,0,.355.134.77.77,0,0,0,.456-.156.554.554,0,0,0,.211-.29,1.71,1.71,0,0,0,.035-.427Z' transform='translate(-34.51 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_356' data-name='패스 356' d='M122.795,22.62l1,.12a.337.337,0,0,0,.116.244.652.652,0,0,0,.393.095,1.029,1.029,0,0,0,.518-.1.438.438,0,0,0,.174-.225,1.365,1.365,0,0,0,.041-.411l0-.491a1.2,1.2,0,0,1-1,.548,1.218,1.218,0,0,1-1.056-.565,1.925,1.925,0,0,1-.307-1.112,1.836,1.836,0,0,1,.4-1.275,1.3,1.3,0,0,1,1-.44,1.213,1.213,0,0,1,1.015.539v-.467h.824v2.985a3.021,3.021,0,0,1-.1.88,1.106,1.106,0,0,1-.272.456,1.2,1.2,0,0,1-.468.26,2.44,2.44,0,0,1-.738.093,1.907,1.907,0,0,1-1.2-.289.9.9,0,0,1-.353-.732c0-.03,0-.066,0-.107m.784-1.954a1.2,1.2,0,0,0,.2.773.634.634,0,0,0,.505.245.7.7,0,0,0,.543-.251,1.1,1.1,0,0,0,.223-.747,1.16,1.16,0,0,0-.214-.764.672.672,0,0,0-.537-.25.645.645,0,0,0-.52.247,1.145,1.145,0,0,0-.2.748' transform='translate(-36 -5.576)' fill='%23fbfbfb'/%3E%3Cpath id='패스_357' data-name='패스 357' d='M130.3,21.338l.876.146a1.434,1.434,0,0,1-.531.732,1.561,1.561,0,0,1-.911.25,1.481,1.481,0,0,1-1.278-.565,1.908,1.908,0,0,1-.328-1.143,1.836,1.836,0,0,1,.432-1.292A1.418,1.418,0,0,1,129.653,19a1.463,1.463,0,0,1,1.166.489,2.158,2.158,0,0,1,.408,1.5h-2.2a.887.887,0,0,0,.213.606.663.663,0,0,0,.505.218.539.539,0,0,0,.345-.112.68.68,0,0,0,.213-.36m.052-.891a.837.837,0,0,0-.2-.577.607.607,0,0,0-.456-.2.616.616,0,0,0-.476.21.817.817,0,0,0-.183.567Z' transform='translate(-37.6 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_358' data-name='패스 358' d='M133.43,19.074h.81v.453A1.306,1.306,0,0,1,135.273,19a1.125,1.125,0,0,1,.553.13,1.02,1.02,0,0,1,.384.4,1.539,1.539,0,0,1,.471-.4,1.164,1.164,0,0,1,.538-.13,1.208,1.208,0,0,1,.62.148.907.907,0,0,1,.376.436,1.9,1.9,0,0,1,.09.686v2.122h-.876V20.5a1.436,1.436,0,0,0-.09-.638.417.417,0,0,0-.374-.187.591.591,0,0,0-.346.113.623.623,0,0,0-.235.331,2.339,2.339,0,0,0-.071.685v1.595h-.878v-1.82a2.49,2.49,0,0,0-.047-.625.387.387,0,0,0-.146-.208.446.446,0,0,0-.266-.069.638.638,0,0,0-.366.11.6.6,0,0,0-.233.314,2.339,2.339,0,0,0-.071.685v1.614h-.876Z' transform='translate(-39.154 -5.576)' fill='%23fbfbfb'/%3E%3Cpath id='패스_359' data-name='패스 359' d='M143.383,21.338l.876.146a1.434,1.434,0,0,1-.531.732,1.562,1.562,0,0,1-.909.25,1.484,1.484,0,0,1-1.28-.565,1.908,1.908,0,0,1-.328-1.143,1.835,1.835,0,0,1,.43-1.292A1.422,1.422,0,0,1,142.73,19a1.461,1.461,0,0,1,1.166.489,2.151,2.151,0,0,1,.41,1.5h-2.2a.886.886,0,0,0,.213.606.663.663,0,0,0,.505.218.546.546,0,0,0,.346-.112.688.688,0,0,0,.211-.36m.052-.891a.837.837,0,0,0-.2-.577.632.632,0,0,0-.931.011.8.8,0,0,0-.184.567Z' transform='translate(-41.438 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_360' data-name='패스 360' d='M149.607,22.395h-.876V20.7a2.662,2.662,0,0,0-.057-.7.491.491,0,0,0-.181-.245.52.52,0,0,0-.3-.088.7.7,0,0,0-.407.125.631.631,0,0,0-.247.332,2.915,2.915,0,0,0-.067.763v1.5h-.877V19.074h.817v.488a1.352,1.352,0,0,1,1.616-.457.882.882,0,0,1,.362.268.959.959,0,0,1,.172.368,2.777,2.777,0,0,1,.048.591Z' transform='translate(-43.016 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_361' data-name='패스 361' d='M153.5,18.616v.7h-.6v1.337a3.135,3.135,0,0,0,.017.473.178.178,0,0,0,.078.11.238.238,0,0,0,.148.045,1.129,1.129,0,0,0,.35-.084l.078.683a1.72,1.72,0,0,1-.692.132,1.112,1.112,0,0,1-.427-.079.638.638,0,0,1-.278-.206.811.811,0,0,1-.123-.343,4.24,4.24,0,0,1-.028-.62V19.314h-.406v-.7h.406v-.658l.876-.517v1.175Z' transform='translate(-44.492 -5.118)' fill='%23fbfbfb'/%3E%3Cpath id='패스_362' data-name='패스 362' d='M157.883,21.555a1.971,1.971,0,0,0,1.332.4,2.569,2.569,0,0,0,.995-.167,1.3,1.3,0,0,0,.618-.51,1.451,1.451,0,0,0,.037-1.468,1.293,1.293,0,0,0-.505-.466,4.612,4.612,0,0,0-.993-.33,2.429,2.429,0,0,1-.846-.305.352.352,0,0,1-.136-.279.332.332,0,0,1,.145-.284,1.04,1.04,0,0,1,.627-.167.92.92,0,0,1,.582.155.784.784,0,0,1,.252.509l.922-.034a1.336,1.336,0,0,0-.454-1.013,1.915,1.915,0,0,0-1.294-.38,2.271,2.271,0,0,0-.9.159,1.245,1.245,0,0,0-.572.464,1.207,1.207,0,0,0,.224,1.577,2.476,2.476,0,0,0,1.039.453c.384.1.63.163.738.2a.746.746,0,0,1,.33.2.414.414,0,0,1,.1.277.56.56,0,0,1-.226.44,1.028,1.028,0,0,1-.674.189,1,1,0,0,1-.669-.212,1.1,1.1,0,0,1-.33-.664l-.9.086a1.746,1.746,0,0,0,.555,1.172' transform='translate(-46.167 -5.052)' fill='%23fbfbfb'/%3E%3Cpath id='패스_363' data-name='패스 363' d='M165.5,21.338l.876.146a1.432,1.432,0,0,1-.53.732,1.567,1.567,0,0,1-.911.25,1.485,1.485,0,0,1-1.28-.565,1.907,1.907,0,0,1-.326-1.143,1.835,1.835,0,0,1,.43-1.292A1.418,1.418,0,0,1,164.853,19a1.468,1.468,0,0,1,1.167.489,2.159,2.159,0,0,1,.407,1.5h-2.2a.884.884,0,0,0,.214.606.662.662,0,0,0,.5.218.543.543,0,0,0,.346-.112.679.679,0,0,0,.211-.36m.054-.891a.837.837,0,0,0-.2-.577.632.632,0,0,0-.931.011.81.81,0,0,0-.184.567Z' transform='translate(-47.93 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_364' data-name='패스 364' d='M169.544,22.395h-.876V19.074h.815v.472a1.389,1.389,0,0,1,.378-.439.7.7,0,0,1,.379-.105,1.141,1.141,0,0,1,.579.163l-.269.764a.781.781,0,0,0-.415-.144.5.5,0,0,0-.314.1.7.7,0,0,0-.2.368,5.17,5.17,0,0,0-.074,1.114Z' transform='translate(-49.495 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_365' data-name='패스 365' d='M172.97,22.425,171.632,19.1h.923l.624,1.694.181.566c.048-.143.078-.237.091-.284.029-.094.059-.187.093-.282l.632-1.694h.9l-1.318,3.321Z' transform='translate(-50.365 -5.606)' fill='%23fbfbfb'/%3E%3Cpath id='패스_366' data-name='패스 366' d='M177.268,17.319h.876v.81h-.876Zm0,1.261h.876V21.9h-.876Z' transform='translate(-52.018 -5.082)' fill='%23fbfbfb'/%3E%3Cpath id='패스_367' data-name='패스 367' d='M182.607,20.05l-.863.16a.618.618,0,0,0-.2-.387.611.611,0,0,0-.4-.131.663.663,0,0,0-.527.227,1.151,1.151,0,0,0-.2.757,1.328,1.328,0,0,0,.2.832.653.653,0,0,0,.535.244.608.608,0,0,0,.414-.141.862.862,0,0,0,.227-.489l.862.146a1.536,1.536,0,0,1-.516.9,1.6,1.6,0,0,1-1.022.3,1.521,1.521,0,0,1-1.162-.459,1.783,1.783,0,0,1-.433-1.271,1.788,1.788,0,0,1,.433-1.279A1.543,1.543,0,0,1,181.129,19a1.62,1.62,0,0,1,.964.258,1.441,1.441,0,0,1,.514.791' transform='translate(-52.679 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_368' data-name='패스 368' d='M186.638,21.338l.876.146a1.426,1.426,0,0,1-.531.732,1.562,1.562,0,0,1-.909.25,1.483,1.483,0,0,1-1.279-.565,1.9,1.9,0,0,1-.327-1.143,1.835,1.835,0,0,1,.43-1.292A1.418,1.418,0,0,1,185.986,19a1.463,1.463,0,0,1,1.166.489,2.151,2.151,0,0,1,.408,1.5h-2.2a.883.883,0,0,0,.211.606.665.665,0,0,0,.505.218.543.543,0,0,0,.346-.112.683.683,0,0,0,.211-.36m.054-.891a.841.841,0,0,0-.2-.577.605.605,0,0,0-.456-.2.613.613,0,0,0-.476.21.81.81,0,0,0-.183.567Z' transform='translate(-54.131 -5.575)' fill='%23fbfbfb'/%3E%3Cpath id='패스_369' data-name='패스 369' d='M85.3,33.172H82.2V30.926H85.3V29.489h2.37v9.548H85.3V36.746H82.2V34.622H85.3Z' transform='translate(-24.12 -8.653)' fill='%23fbfbfb'/%3E%3Cpath id='패스_370' data-name='패스 370' d='M81.74,45.182a4.518,4.518,0,1,1-4.7,4.535,4.666,4.666,0,0,1,4.7-4.535m0,6.864a2.29,2.29,0,0,0,2.372-2.33,2.321,2.321,0,0,0-2.372-2.37,2.353,2.353,0,0,0-2.409,2.37,2.322,2.322,0,0,0,2.409,2.33' transform='translate(-22.607 -13.258)' fill='%23fbfbfb'/%3E%3Cpath id='패스_371' data-name='패스 371' d='M98.095,33.537l-3.064,4.781-1.924-1.264L96.582,31.7H93.516V29.531h9.073V31.7H99.564L103,36.971l-1.92,1.265Z' transform='translate(-27.322 -8.666)' fill='%23fbfbfb'/%3E%3Crect id='사각형_86' data-name='사각형 86' width='2.368' height='9.487' transform='translate(78.837 20.884)' fill='%23fbfbfb'/%3E%3Crect id='사각형_87' data-name='사각형 87' width='2.37' height='9.487' transform='translate(16.023 20.884)' fill='%23fbfbfb'/%3E%3Cpath id='패스_372' data-name='패스 372' d='M122.428,28.741a4.4,4.4,0,1,1-4.535,4.374,4.52,4.52,0,0,1,4.535-4.374m0,6.62a2.325,2.325,0,0,0,2.249-2.246,2.29,2.29,0,0,0-2.249-2.207,2.251,2.251,0,0,0-2.208,2.207,2.287,2.287,0,0,0,2.208,2.246' transform='translate(-34.595 -8.434)' fill='%23fbfbfb'/%3E%3Cpath id='패스_373' data-name='패스 373' d='M121.02,41.919H117.3v-2.2h9.848v2.2h-3.76v3.763h-2.37Z' transform='translate(-34.422 -11.654)' fill='%23fbfbfb'/%3E%3Cpath id='패스_374' data-name='패스 374' d='M135.973,49.975H127.39V43.667h2.373v4.144h6.21Zm-2.534-8.055H130.98V39.794h2.459V32.558h2.409v12.4h-2.409Z' transform='translate(-37.382 -9.554)' fill='%23fbfbfb'/%3E%3Cpath id='패스_375' data-name='패스 375' d='M145.968,33.936l-3.187,4.618-1.8-1.268,5.028-7.314,4.863,7.233-1.718,1.227Zm7.083,1.511H150.56V33.241h2.491V29.522h2.33v9.512h-2.33Zm7.012,13.809h-8.583V42.429h2.37v4.66h6.213ZM160,39.034h-2.37V29.522H160Z' transform='translate(-41.37 -8.663)' fill='%23fbfbfb'/%3E%3Cpath id='패스_376' data-name='패스 376' d='M170.588,39.986V29.525h7.03v2.206h-4.659v1.512h4.659v2.206h-4.659v2.289h4.659v2.248Z' transform='translate(-50.058 -8.664)' fill='%23fbfbfb'/%3E%3Cpath id='패스_377' data-name='패스 377' d='M184.362,35.561h-2.806V33.354h2.806v-3.83h2.415v9.51h-2.415Z' transform='translate(-53.277 -8.663)' fill='%23fbfbfb'/%3E%3Cpath id='패스_378' data-name='패스 378' d='M16.5,33.3H13.925V31.046H16.5v-1.5H18.79v9.474H16.5V36.87H13.925V34.745H16.5Z' transform='translate(-4.086 -8.671)' fill='%23fbfbfb'/%3E%3Cpath id='패스_379' data-name='패스 379' d='M4.7,29.354A4.559,4.559,0,1,1,0,33.89a4.7,4.7,0,0,1,4.7-4.536m0,6.907a2.379,2.379,0,0,0,2.409-2.37A2.4,2.4,0,0,0,4.7,31.52a2.313,2.313,0,0,0-2.33,2.37,2.289,2.289,0,0,0,2.33,2.37' transform='translate(0 -8.614)' fill='%23fbfbfb'/%3E%3Cpath id='패스_380' data-name='패스 380' d='M73,29.354a4.559,4.559,0,1,1-4.7,4.536A4.7,4.7,0,0,1,73,29.354m0,6.907a2.38,2.38,0,0,0,2.411-2.37A2.407,2.407,0,0,0,73,31.52a2.313,2.313,0,0,0-2.33,2.37A2.289,2.289,0,0,0,73,36.261' transform='translate(-20.041 -8.614)' fill='%23fbfbfb'/%3E%3Cpath id='패스_381' data-name='패스 381' d='M30.884,19.076H24.14V16.868h15.9v2.208H33.3v2.818H30.884Zm1.186-8.255-4,4.494-1.677-1.552L32.07,7.469l5.68,6.294-1.674,1.552ZM27.861,23.063h8.623v5.657H30.271v1.747h6.213v2.207H27.9V26.6h6.213V25.311H27.861Z' transform='translate(-7.084 -2.191)' fill='%23fbfbfb'/%3E%3Cpath id='패스_382' data-name='패스 382' d='M33.006,3.351,29,7.845,27.322,6.293,33.006,0l5.679,6.293L37.01,7.845Z' transform='translate(-8.018 0)' fill='%23fbfbfb'/%3E%3Cpath id='패스_383' data-name='패스 383' d='M44.154,29.551h7.928v9.491H49.71V31.8H44.154ZM54.7,40.692A4.52,4.52,0,1,1,50,45.229a4.665,4.665,0,0,1,4.7-4.537m0,6.867a2.29,2.29,0,0,0,2.372-2.33A2.324,2.324,0,0,0,54.7,42.858a2.358,2.358,0,0,0-2.411,2.371,2.324,2.324,0,0,0,2.411,2.33M56.575,33.3H53.47V31.05h3.105v-1.5h2.372v9.491H56.575V37.61H53.47V35.485h3.105Z' transform='translate(-12.957 -8.671)' fill='%23fbfbfb'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat no-repeat;
+	background-position: center center;
+	background-size: 14rem auto;
 }
 
-.header .btn-menu {
-    font-size: 0;
-    line-height: 0;
-    width: 6.5rem;
-    height: 6.5rem;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74.98' height='47.38' viewBox='0 0 74.98 47.38'%3E%3Cg id='구성_요소_1_1' data-name='구성 요소 1 – 1' transform='translate(1 1)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M1658,64.059h72.98' transform='translate(-1658 -64.059)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='7'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M1658,64.059h42.747' transform='translate(-1628.768 -41.369)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_3' data-name='패스 3' d='M1658,64.059h72.98' transform='translate(-1658 -18.679)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='7'/%3E%3C/g%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: 3.5rem auto;
+.header .gnb .depth1 {
+	display: flex;
+	justify-content: space-between;
 }
-
-.header.open .btn-menu {
-    display: none;
+.header .gnb li {
+	padding: 2.5rem 3rem;
 }
-
-.header.open .gnb {
-    position: absolute;
-    top: 10rem;
-    left: 0;
-    letter-spacing: 0.3rem;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    font-size: 3.5rem;
-    line-height: 10rem;
-    background-color: #fbfbfb;
-    z-index: 100;
-}
-
-.header.open .gnb > ul > li > a:hover{
-    font-weight: 700;
-    text-decoration: underline;
-    text-underline-offset: 2rem;
-    text-decoration-thickness: 0.1rem;
-}
-.header .btn-close{
-    display: none;}
-
-.header.open .btn-close {
-    display: block;
-    font-size: 0;
-    line-height: 0;
-    width: 6.5rem;
-    height: 6.5rem;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28.915' height='28.217' viewBox='0 0 28.915 28.217'%3E%3Cg id='그룹_57' data-name='그룹 57' transform='translate(-679.242 -43.802)'%3E%3Cpath id='패스_90' data-name='패스 90' d='M1658,64.059h37.9' transform='translate(-446.439 -1173.171) rotate(45)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='2'/%3E%3Cpath id='패스_92' data-name='패스 92' d='M1658,64.059h37.9' transform='translate(-537.731 1198.398) rotate(-45)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
-background-repeat: no-repeat no-repeat;
-background-position: center center;
-    background-size: 3.5rem auto;
-}
-
-.header .logo a {
-    position: absolute;
-    font-size: 0;
-    line-height: 0;
-    width: 13.5rem;
-    height: 6.5rem;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10rem auto;
-}
-
 
 .visual {
-    text-align: center;
-    width: 81rem;
-    border-radius: 5rem;
-    background-image: url(../images/visual.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    aspect-ratio: 1 / 1;
-    background-size: cover;
-    margin: 9rem auto;
+	background-color: #003831;
+	border-radius: 0 0 1rem 1rem;
+	height: 27.5rem;
+	width: auto;
 }
 
 .visual h2 {
-    font-size: 3.5rem;
-    padding-top: 9rem;
-    line-height: 6rem;
-    position: relative;
+	display: none;
+}
+.visual .swiper_visual {
+	width: 100%;
+	height: 100%;
 }
 
-.visual h2::after {
-    position: absolute;
-    bottom: -3rem;
-    left: calc(50% - 4rem);
-    background-color: #3b3b3b;
-    width: 8rem;
-    height: 0.1rem;
-    content: '';
+.visual .swiper_visual .swiper-wrapper {
+	width: 100%;
+	height: 100%;
 }
 
-.visual p {
-    display: block;
-    margin-top: 6rem;
-    font-size: 2.5rem;
+.visual .swiper_visual .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+	border-radius: 1rem;
 }
 
-.church_vision {
-    text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 14.5rem;
-    font-size: 2.5rem;
-    position: relative;
+.visual .swiper_visual .kams_tit {
+	position: absolute;
+	bottom: 4rem;
+	left: 5rem;
+	z-index: 1;
+	color: #fbfbfb;
+	display: block;
+	font-size: 4.5rem;
+	font-weight: 700;
+}
+.kams_notice {
+	margin-top: 7rem;
+}
+.kams_notice .notice_title_wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.notice_title {
+	display: inline-block;
+}
+.kams_notice .notice_title_wrap .select_notice {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	font-size: 1.7rem;
+	border-radius: 10rem;
+	background-color: #f2f2f2;
+	font-weight: 700;
+	padding: 0 1.5rem;
 }
 
-.church_vision::before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 300%;
-    height: 100%;
-    background-color: #f4f4f4;
-    transform: translate(-50%, 0);
-    content: '';
+.kams_notice .notice_title_wrap ul.select_notice > li > button {
+	padding: 1.5rem;
 }
 
-.church_vision h2 {
-    display: none;
+.kams_notice .notice_wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	border: 0.1rem solid #888888;
+	margin-top: 5rem;
 }
 
-.church_vision .vision_info {
-    display: block;
-    line-height: 6rem;
-    margin-bottom: 16rem;
-    position: relative;
+.kams_notice .notice_wrap #notice_box {
+	padding: 3rem;
 }
 
-.church_vision .vision_info::after {
-    position: absolute;
-    bottom: -8rem;
-    left: calc(50% - 4rem);
-    background-color: #3b3b3b;
-    width: 8rem;
-    height: 0.1rem;
-    content: '';
+.kams_notice .notice_wrap #notice_box:nth-child(1),
+.kams_notice .notice_wrap #notice_box:nth-child(2),
+.kams_notice .notice_wrap #notice_box:nth-child(3) {
+	border-bottom: 0.1rem solid #999999;
+}
+.kams_notice .notice_wrap #notice_box:nth-child(1),
+.kams_notice .notice_wrap #notice_box:nth-child(2),
+.kams_notice .notice_wrap #notice_box:nth-child(4),
+.kams_notice .notice_wrap #notice_box:nth-child(5) {
+	border-right: 0.1rem solid #999999;
+}
+.kams_notice .label_reg_on,
+.kams_notice .label_reg_done {
+	font-size: 1.8rem;
+	padding: 0.6rem 1.5rem;
+	border-radius: 1.8rem;
+	font-weight: 700;
+	color: #fbfbfb;
 }
 
-.church_vision .vision_info em {
-    font-weight: 700;
-    font-size: 3rem;
+.kams_notice .label_reg_on {
+	background-color: #efb21e;
 }
 
-.church_vision .vision_detail {
-    font-size: 2.5rem;
-    margin-top: 28rem;
-    text-align: center;
+.kams_notice .label_reg_done {
+	background-color: #666666;
 }
 
-.church_vision .vision_detail ul {
-    display: block;
-    padding-bottom: 36rem;
+.kams_notice .notice_info {
+	margin-top: 3.5rem;
+	font-size: 2rem;
+	font-weight: 700;
 }
 
-.church_vision .vision_detail ul>li {
-    position: relative;
+.kams_notice .notice_date {
+	float: right;
+	font-size: 1.8rem;
 }
 
-.church_vision .vision_detail .gospel {
-    margin-left: calc(50% - 30rem);
-    float: left;
+.culture_news {
+	margin-top: 10rem;
+	background-color: #e5e5e5;
+	padding-bottom: 10rem;
 }
 
-.church_vision .vision_detail .gospel::before {
-    position: absolute;
-    top: -15rem;
-    left: 0;
-    width: 26rem;
-    height: 27rem;
-    background-image: url(../images/vision01.png);
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: contain;
-    content: '';
+.culture_news .news_swiper {
+	width: 100%;
+	height: 100%;
 }
 
-.church_vision .vision_detail .kingdom {
-    margin-left: 16rem;
-    float: left;
+.culture_news .news_swiper .swiper-wrapper {
+	width: 100%;
+	height: 100%;
 }
 
-.church_vision .vision_detail .kingdom::before {
-    position: absolute;
-    top: -15rem;
-    left: -5rem;
-    width: 20rem;
-    height: 26rem;
-    background-image: url(../images/vision02.png);
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: contain;
-    content: '';
+.culture_news .news_swiper .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	overflow: clip;
+	object-position: top;
+	border-radius: 1rem 1rem 0 0;
 }
 
-.church_vision .vision_detail .community {
-    margin-top: 25rem;
-    margin-left: calc(50% - 46rem);
-    clear: left;
-    float: left;
+.culture_news .news_swiper .swiper-slide .news_info {
+	padding: 1rem 2rem 0 2rem;
+	display: grid;
+	grid-template-rows: 1fr 1.75fr 1fr;
+	grid-row-gap: 2rem;
+	background-color: #f2f2f2;
+	border-radius: 0 0 1rem 1rem;
+	font-size: 1.8rem;
 }
 
-.church_vision .vision_detail .community::before {
-    position: absolute;
-    top: -18rem;
-    left: -12rem;
-    width: 30rem;
-    height: 26rem;
-    background-image: url(../images/vision03.png);
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: contain;
-    content: '';
+.culture_news .news_swiper .swiper-slide .news_info .label_charity,
+.culture_news .news_swiper .swiper-slide .news_info .label_event {
+	margin-top: 1rem;
+	width: fit-content;
+	font-size: 1.8rem;
+	padding: 1rem 2rem 0.6rem 2rem;
+	border-radius: 2rem;
+	font-weight: 700;
+	color: #fbfbfb;
 }
 
-.church_vision .vision_detail .faith,
-.church_vision .vision_detail .truth {
-    margin-left: 28rem;
-    float: left;
-    margin-top: 25rem;
-    z-index: 100;
+.culture_news .news_swiper .swiper-slide .news_info .label_charity {
+	background-color: #a132f9;
+}
+.culture_news .news_swiper .swiper-slide .news_info .label_event {
+	background-color: #666666;
 }
 
-.church_vision .vision_detail .faith::before {
-    position: absolute;
-    top: -18rem;
-    left: -12rem;
-    width: 39rem;
-    height: 30rem;
-    z-index: 1;
-    background-image: url(../images/vision04.png);
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: contain;
-    content: '';
-}
-
-.church_vision .vision_detail .truth::before {
-    position: absolute;
-    top: -19rem;
-    left: -5rem;
-    width: 23rem;
-    height: 28rem;
-    background-image: url(../images/vision05.png);
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: contain;
-    content: '';
-}
-
-.service_info h2,
-.notice h2 {
-    font-size: 5rem;
-    font-weight: 700;
-    margin-top: 13rem;
-    margin-bottom: 13rem;
-    text-align: center;
-    position: relative;
-}
-
-.service_info h2::before,
-.notice h2::before {
-    position: absolute;
-    bottom: -3rem;
-    left: calc(50% - 4rem);
-    background-color: #3b3b3b;
-    width: 8rem;
-    height: 0.1rem;
-    content: '';
-}
-
-.service_info .service_wrap {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 24rem;
-    position: relative;
-}
-
-.service_info {
-    position: relative;
-}
-
-.service_info::before {
-    position: absolute;
-    bottom: -26rem;
-    left: 50%;
-    width: 200%;
-    transform: translate(-50%, 0);
-    height: 25%;
-    background-image: url(../images/service_bg.png);
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: contain;
-    content: '';
-}
-
-
-.service_info h3 {
-    font-size: 4rem;
-    margin-bottom: 6rem;
-    font-weight: 700;
-
-}
-
-.service_info .time_info {
-    margin-top: 1rem;
-}
-
-.service_info .time_info .sunday_service {
-    margin-bottom: 16rem;
-    position: relative;
-}
-
-.service_info .time_info .sunday_service::before {
-    position: absolute;
-    bottom: -11rem;
-    left: 50%;
-    background-color: #3b3b3b;
-    width: 0.1rem;
-    height: 6rem;
-    content: '';
-}
-
-.service_info .sermon .youtube_wrap {
-    display: block;
-    width: 68rem;
-}
-
-.service_info .sermon .youtube_wrap .btn-youtube {
-    display: none;
-}
-
-.service_info .sermon .youtube_wrap iframe {
-    display: block;
-    border-radius: 2rem;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-}
-
-.service_info .time_info span {
-    display: block;
-}
-
-.notice h2 {
-    padding-top: 20rem;
-}
-
-.notice ul {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2.8rem;
-    margin-bottom: 12rem;
-    text-align: center;
-
-    position: relative;
-}
-
-.notice ul li {
-    width: calc(33.3% - 10rem);
-    aspect-ratio: 1 / 1;
-}
-
-.notice ul li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding-top: 65%;
-    color: #fbfbfb;
-    box-shadow: 0 0.3rem 0.3rem #666;
-    font-size: 4rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5rem;
-}
-
-.notice ul .jubo {
-    background-image: url(../images/notice01.png);
-}
-
-.notice ul .essay {
-    background-image: url(../images/notice02.png);
-}
-
-.notice ul .meditation {
-    background-image: url(../images/notice03.png);
-}
-
-.footer {
-    padding: 5rem 0;
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 5rem;
-    border-top: 0.1rem solid #f2f2f2;
-    box-shadow: 0 -0.2rem 0.2rem #f3f3f3;
+.culture_news .news_swiper .swiper-slide .news_info .notice_info {
+	font-size: 2rem;
+	font-weight: 700;
 }
 
 @media screen and (max-width: 1240px) {
-
-    html,
-    body {
-        font-size: 8px;
-    }
+	html,
+	body {
+		font-size: 8px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
-
-    html,
-    body {
-        font-size: 7px;
-    }
+	html,
+	body {
+		font-size: 7px;
+	}
 }
 
-
 @media screen and (max-width: 1024px) {
-
-    html,
-    body {
-        font-size: 7px;
-    }
+	html,
+	body {
+		font-size: 7px;
+	}
 }
 
 @media screen and (max-width: 738px) {
+	html,
+	body {
+		font-size: 6px;
+	}
 
-    html,
-    body {
-        font-size: 6px;
-    }
+	.header_wrap {
+		height: 12rem;
+	}
 
-    .header_wrap {
-        height: 12rem;
-    }
+	.header .logo a {
+		background-size: 12rem auto;
+	}
 
-    .header .logo a {
-        background-size: 12rem auto;
-    }
+	.header .btn-menu {
+		font-size: 0;
+		line-height: 0;
+		width: 6.5rem;
+		height: 6.5rem;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74.98' height='47.38' viewBox='0 0 74.98 47.38'%3E%3Cg id='구성_요소_1_1' data-name='구성 요소 1 – 1' transform='translate(1 1)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M1658,64.059h72.98' transform='translate(-1658 -64.059)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M1658,64.059h42.747' transform='translate(-1628.768 -41.369)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_3' data-name='패스 3' d='M1658,64.059h72.98' transform='translate(-1658 -18.679)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3C/g%3E%3C/svg%3E%0A");
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		background-size: 5rem auto;
+	}
 
-    .header .btn-menu {
-        font-size: 0;
-        line-height: 0;
-        width: 6.5rem;
-        height: 6.5rem;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74.98' height='47.38' viewBox='0 0 74.98 47.38'%3E%3Cg id='구성_요소_1_1' data-name='구성 요소 1 – 1' transform='translate(1 1)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M1658,64.059h72.98' transform='translate(-1658 -64.059)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M1658,64.059h42.747' transform='translate(-1628.768 -41.369)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3Cpath id='패스_3' data-name='패스 3' d='M1658,64.059h72.98' transform='translate(-1658 -18.679)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='5'/%3E%3C/g%3E%3C/svg%3E%0A");
-        background-repeat: no-repeat no-repeat;
-        background-position: center center;
-        background-size: 5rem auto;
-    }
+	.visual {
+		aspect-ratio: 1 / 1.5;
+		background-size: cover;
+		margin: 16rem auto;
+	}
 
-    .visual {
-        aspect-ratio: 1 / 1.5;
-        background-size: cover;
-        margin: 16rem auto
-    }
+	.visual h2 {
+		font-size: 4rem;
+		padding-top: 13rem;
+		line-height: 6rem;
+		position: relative;
+	}
 
-    .visual h2 {
-        font-size: 4rem;
-        padding-top: 13rem;
-        line-height: 6rem;
-        position: relative;
-    }
+	.visual h2::after {
+		bottom: -5rem;
+		width: 8rem;
+	}
 
-    .visual h2::after {
-        bottom: -5rem;
-        width: 8rem;
-    }
+	.visual p {
+		margin-top: 10rem;
+		font-size: 3rem;
+	}
 
-    .visual p {
-        margin-top: 10rem;
-        font-size: 3rem;
-    }
+	.church_vision {
+		padding-bottom: 55rem;
+	}
 
-    .church_vision {
-        padding-bottom: 55rem;
-    }
+	.church_vision .vision_info {
+		display: block;
+		line-height: 6rem;
+		margin-bottom: 25rem;
+		position: relative;
+	}
 
+	.church_vision .vision_info::after {
+		position: absolute;
+		bottom: -10rem;
+		left: calc(50% - 4rem);
+		background-color: #3b3b3b;
+		width: 8rem;
+		height: 0.1rem;
+		content: "";
+	}
 
-    .church_vision .vision_info {
-        display: block;
-        line-height: 6rem;
-        margin-bottom: 25rem;
-        position: relative;
-    }
+	.church_vision .vision_info em {
+		font-weight: 700;
+		font-size: 3.5rem;
+	}
 
-    .church_vision .vision_info::after {
-        position: absolute;
-        bottom: -10rem;
-        left: calc(50% - 4rem);
-        background-color: #3b3b3b;
-        width: 8rem;
-        height: 0.1rem;
-        content: '';
-    }
+	.church_vision .vision_detail {
+		margin-top: 40rem;
+		text-align: center;
+	}
 
-    .church_vision .vision_info em {
-        font-weight: 700;
-        font-size: 3.5rem;
-    }
+	.church_vision .vision_detail ul {
+		display: block;
+		padding-bottom: 36rem;
+	}
 
-    .church_vision .vision_detail {
-        margin-top: 40rem;
-        text-align: center;
-    }
+	.church_vision .vision_detail .gospel {
+		margin-left: calc(50% - 30rem);
+		float: left;
+	}
 
-    .church_vision .vision_detail ul {
-        display: block;
-        padding-bottom: 36rem;
-    }
+	.church_vision .vision_detail .gospel::before {
+		position: absolute;
+		top: -15rem;
+		left: 0;
+		width: 26rem;
+		height: 27rem;
+		background-image: url(../images/vision01.png);
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		background-size: contain;
+		content: "";
+	}
 
+	.church_vision .vision_detail .kingdom {
+		margin-left: 20rem;
+		margin-top: 15rem;
+		float: left;
+	}
 
-    .church_vision .vision_detail .gospel {
-        margin-left: calc(50% - 30rem);
-        float: left;
-    }
+	.church_vision .vision_detail .kingdom::before {
+		position: absolute;
+		top: -15rem;
+		left: -5rem;
+		width: 20rem;
+		height: 26rem;
+		background-image: url(../images/vision02.png);
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		background-size: contain;
+		content: "";
+	}
 
-    .church_vision .vision_detail .gospel::before {
-        position: absolute;
-        top: -15rem;
-        left: 0;
-        width: 26rem;
-        height: 27rem;
-        background-image: url(../images/vision01.png);
-        background-repeat: no-repeat no-repeat;
-        background-position: center center;
-        background-size: contain;
-        content: '';
-    }
+	.church_vision .vision_detail .community {
+		margin-top: 38rem;
+		margin-left: calc(50% - 28rem);
+		float: left;
+	}
 
-    .church_vision .vision_detail .kingdom {
-        margin-left: 20rem;
-        margin-top: 15rem;
-        float: left;
-    }
+	.church_vision .vision_detail .community::before {
+		position: absolute;
+		top: -18rem;
+		left: -12rem;
+		width: 30rem;
+		height: 26rem;
+		background-image: url(../images/vision03.png);
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		background-size: contain;
+		content: "";
+	}
 
-    .church_vision .vision_detail .kingdom::before {
-        position: absolute;
-        top: -15rem;
-        left: -5rem;
-        width: 20rem;
-        height: 26rem;
-        background-image: url(../images/vision02.png);
-        background-repeat: no-repeat no-repeat;
-        background-position: center center;
-        background-size: contain;
-        content: '';
-    }
+	.church_vision .vision_detail .faith {
+		margin-left: 10rem;
+		float: left;
+		margin-top: 15rem;
+		z-index: 100;
+	}
 
-    .church_vision .vision_detail .community {
-        margin-top: 38rem;
-        margin-left: calc(50% - 28rem);
-        float: left;
-    }
+	.church_vision .vision_detail .truth {
+		margin-left: 15rem;
+		margin-top: 45rem;
+	}
 
-    .church_vision .vision_detail .community::before {
-        position: absolute;
-        top: -18rem;
-        left: -12rem;
-        width: 30rem;
-        height: 26rem;
-        background-image: url(../images/vision03.png);
-        background-repeat: no-repeat no-repeat;
-        background-position: center center;
-        background-size: contain;
-        content: '';
-    }
+	.church_vision .vision_detail .faith::before {
+		position: absolute;
+		top: -22rem;
+		left: -18rem;
+		width: 39rem;
+		height: 30rem;
+		z-index: 1;
+		background-image: url(../images/vision03_mo.png);
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		background-size: contain;
+		content: "";
+	}
 
-    .church_vision .vision_detail .faith {
-        margin-left: 10rem;
-        float: left;
-        margin-top: 15rem;
-        z-index: 100;
-    }
+	.church_vision .vision_detail .truth::before {
+		position: absolute;
+		top: -19rem;
+		left: -5rem;
+		width: 23rem;
+		height: 28rem;
+		background-image: url(../images/vision05.png);
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		background-size: contain;
+		content: "";
+	}
 
-    .church_vision .vision_detail .truth {
-        margin-left: 15rem;
-        margin-top: 45rem;
-    }
+	.service_info {
+		margin: 25rem 0rem 7rem 0rem;
+	}
 
-    .church_vision .vision_detail .faith::before {
-        position: absolute;
-        top: -22rem;
-        left: -18rem;
-        width: 39rem;
-        height: 30rem;
-        z-index: 1;
-        background-image: url(../images/vision03_mo.png);
-        background-repeat: no-repeat no-repeat;
-        background-position: center center;
-        background-size: contain;
-        content: '';
-    }
+	.service_info .service_wrap {
+		justify-content: space-between;
+		margin: 0 7rem;
+	}
 
-    .church_vision .vision_detail .truth::before {
-        position: absolute;
-        top: -19rem;
-        left: -5rem;
-        width: 23rem;
-        height: 28rem;
-        background-image: url(../images/vision05.png);
-        background-repeat: no-repeat no-repeat;
-        background-position: center center;
-        background-size: contain;
-        content: '';
-    }
+	.service_info h2 {
+		font-size: 5rem;
+		font-weight: 700;
+		margin: 5rem 7rem 5rem 7rem;
+		text-align: left;
+		position: relative;
+	}
 
-    .service_info {
-        margin: 25rem 0rem 7rem 0rem;
-    }
+	.service_info h2::before {
+		display: none;
+	}
 
-    .service_info .service_wrap {
-        justify-content: space-between;
-        margin: 0 7rem;
-    }
+	.service_info h3 {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+		font-weight: 700;
+	}
 
-    .service_info h2 {
-        font-size: 5rem;
-        font-weight: 700;
-        margin: 5rem 7rem 5rem 7rem;
-        text-align: left;
-        position: relative;
-    }
+	.service_info .time_info {
+		margin-top: 1rem;
+		text-align: left;
+		font-size: 4rem;
+		width: calc(100% - 40rem);
+	}
 
+	.service_info .time_info .sunday_service {
+		margin-bottom: 16rem;
+		position: relative;
+	}
 
-    .service_info h2::before {
-        display: none;
-    }
+	.service_info .time_info .sunday_service::before {
+		display: none;
+	}
 
-    .service_info h3 {
-        font-size: 4rem;
-        margin-bottom: 3rem;
-        font-weight: 700;
+	.service_info .time_info .worship_add {
+		display: none;
+	}
 
-    }
+	.service_info .sermon h3 {
+		display: none;
+	}
 
-    .service_info .time_info {
-        margin-top: 1rem;
-        text-align: left;
-        font-size: 4rem;
-        width: calc(100% - 40rem);
-    }
+	.service_info .sermon .youtube_wrap {
+		display: block;
+		width: 40rem;
+		aspect-ratio: 2 / 1;
+	}
 
-    .service_info .time_info .sunday_service {
-        margin-bottom: 16rem;
-        position: relative;
-    }
+	.service_info .sermon .youtube_wrap iframe {
+		display: none;
+	}
 
-    .service_info .time_info .sunday_service::before {
-        display: none;
-    }
+	.service_info .sermon .youtube_wrap .btn-youtube {
+		display: block;
+		font-size: 4rem;
+		padding: 2rem 8rem;
+		border-radius: 2rem;
+		color: #fbfbfb;
+		background-color: #1d6e4f;
+	}
 
-    .service_info .time_info .worship_add {
-        display: none;
-    }
+	.service_info::before {
+		display: none;
+	}
 
-    .service_info .sermon h3 {
-        display: none;
-    }
+	.notice h2 {
+		text-align: left;
+		padding-top: 0;
+		margin: 5rem 0 5rem 7rem;
+	}
 
-    .service_info .sermon .youtube_wrap {
-        display: block;
-        width: 40rem;
-        aspect-ratio: 2 / 1;
-    }
+	.notice h2::before {
+		display: none;
+	}
 
-    .service_info .sermon .youtube_wrap iframe {
-        display: none;
-    }
+	.notice ul {
+		display: flex;
+		flex-direction: column;
+		font-size: 2.8rem;
+		margin-bottom: 5rem;
+		text-align: right;
+		position: relative;
+	}
 
+	.notice ul li {
+		width: calc(100% - 14rem);
+		margin-left: 7rem;
+		aspect-ratio: auto;
+		margin-bottom: 2rem;
+	}
 
+	.notice ul li br {
+		display: none;
+	}
 
-    .service_info .sermon .youtube_wrap .btn-youtube {
-        display: block;
-        ;
-        font-size: 4rem;
-        padding: 2rem 8rem;
-        border-radius: 2rem;
-        color: #fbfbfb;
-        background-color: #1D6E4F;
-    }
+	.notice ul li a {
+		padding-top: 20rem;
+		padding-bottom: 3rem;
+		padding-right: 3rem;
+		color: #fbfbfb;
+		font-weight: 700;
+		font-size: 5rem;
+		background-position: top left;
+		background-size: cover;
+		border-radius: 1rem;
+	}
 
-    .service_info::before {
-        display: none;
-    }
+	.notice ul .jubo {
+		background-image: url(../images/notice01_mo.png);
+	}
 
-    .notice h2 {
-        text-align: left;
-        padding-top: 0;
-        margin: 5rem 0 5rem 7rem;
-    }
+	.notice ul .essay {
+		background-image: url(../images/notice02_mo.png);
+	}
 
-    .notice h2::before {
-        display: none;
-    }
+	.notice ul .meditation {
+		background-image: url(../images/notice03_mo.png);
+	}
 
-    .notice ul {
-        display: flex;
-        flex-direction: column;
-        font-size: 2.8rem;
-        margin-bottom: 5rem;
-        text-align: right;
-        position: relative;
-    }
-
-    .notice ul li {
-        width: calc(100% - 14rem);
-        margin-left: 7rem;
-        aspect-ratio: auto;
-        margin-bottom: 2rem;
-    }
-
-    .notice ul li br {
-        display: none;
-    }
-
-    .notice ul li a {
-
-        padding-top: 20rem;
-        padding-bottom: 3rem;
-        padding-right: 3rem;
-        color: #fbfbfb;
-        font-weight: 700;
-        font-size: 5rem;
-        background-position: top left;
-        background-size: cover;
-        border-radius: 1rem;
-    }
-
-    .notice ul .jubo {
-        background-image: url(../images/notice01_mo.png);
-    }
-
-    .notice ul .essay {
-        background-image: url(../images/notice02_mo.png);
-    }
-
-    .notice ul .meditation {
-        background-image: url(../images/notice03_mo.png);
-    }
-
-    .footer {
-        padding: 5rem 0;
-        font-size: 2rem;
-        text-align: center;
-        line-height: 4rem;
-        border-top: 0.1rem solid #f2f2f2;
-        box-shadow: 0 -0.2rem 0.2rem #f3f3f3;
-    }
+	.footer {
+		padding: 5rem 0;
+		font-size: 2rem;
+		text-align: center;
+		line-height: 4rem;
+		border-top: 0.1rem solid #f2f2f2;
+		box-shadow: 0 -0.2rem 0.2rem #f3f3f3;
+	}
 }
 
 @media screen and (max-width: 512px) {
-
-    html,
-    body {
-        font-size: 5px;
-    }
+	html,
+	body {
+		font-size: 5px;
+	}
 }
 
 @media screen and (max-width: 418px) {
-
-    html,
-    body {
-        font-size: 4px;
-    }
+	html,
+	body {
+		font-size: 4px;
+	}
 }
