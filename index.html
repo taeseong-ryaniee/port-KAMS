@@ -20,8 +20,20 @@
     <link rel="icon" href="gokams.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/jquery-4.0.0-beta.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'jll8nsg',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
     <title>예술경영지원센터 | Korea Art Management Service, Korea</title>
 </head>
 
@@ -86,11 +98,10 @@
                                     기관</span>
                             </div>
                         </div>
-                        <div class="visual_pagination"></div>
+                    </div>
+                        <div class="visual_pagination"></d>
                         <div class="visual_next"></div>
                         <div class="visual_prev"></div>
-                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                    </div>
                 </div>
             </section>
             <section class="kams_notice">
@@ -193,92 +204,140 @@
                                     <span class="notice_date">2024. 4. 15.</span>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <img src="images/news04.png" alt="[KOFICE] 2024한-아세안 문화혁신 공동협력 프로젝트 공모">
+                                <div class="news_info">
+                                    <span class="label_charity">공모/기금</span>
+                                    <p class="notice_info">[KOFICE] 2024한-아세안 문화혁신 공동협력 프로젝트 공모</p>
+                                    <span class="notice_date">2024. 4. 15.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_btn_prev">이전</div><!--이전팝업보기-->
+                    <div class="news_btn_next">다음</div>
+                </div>
+
+            </section>
+            <section class="kams_research">
+                <div class="wrapper">
+                    <h2>KAMS 리서치프로젝트</h2>
+                    <h3>예술경영지원센터에서 예술 산업 발전을 위해 연구하는 다양한 프로젝트 내용을 확인해보세요</h3>
+                    <div class="TheArtro">
+                        <img src="images/research01.jpeg"
+                            alt="The 2023 Contmeporary Art Market Report, 글로벌 현대미술 시장 동향 및 이슈 분석">
+                        <div class="research_info">
+                            <h4>더아트로</h4>
+                            <p>The 2023 Contmeporary Art Market Report, 글로벌 현대미술 시장 동향 및 이슈 분석</p>
+                            <span class="notice_date">2024. 4. 15.</span>
+                        </div>
+                    </div>
+                    <div class="TheApro">
+                        <img src="images/research02.jpeg" alt="2023 팸스살롱 포럼 ②">
+                        <div class="research_info">
+                            <h4>더아프로</h4>
+                            <p>2023 팸스살롱 포럼 ②<br> 속가능한 공연예술: 다양성과 미래관객</p>
+                            <span class="notice_date">2024. 4. 15.</span>
+                        </div>
+                    </div>
+                    <div class="Kart_market">
+                        <img src="images/research03.png" alt="2023년 국내 미술시장 결산 분석 리포트">
+                        <div class="research_info">
+                            <h4>K-ART MARKET</h4>
+                            <p>2023년 국내 미술시장 결산 분석 리포트</p>
+                            <span class="notice_date">2024. 4. 15.</span>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="kams_research">
+            <section class="kams_publish">
                 <div class="wrapper">
-
-                    <h2>KAMS 리서치프로젝트</h2>
-                    <h3>예술경영지원센터에서 예술 산업 발전을 위해 연구하는 다양한 프로젝트 내용을 확인해보세요</h3>
-                    <div class="TheArtro">
-                        <img src="" alt="">
-                        <h4>더아트로</h4>
-                        <p>The 2023 Contmeporary Art Market Report, 글로벌 현대미술 시장 동향 및 이슈 분석</p>
-                        <span class="notice_date">2024. 4. 15.</span>
+                    <h2>KAMS 최신발간자료</h2>
+                    <h3>예술경영지원센터에서 발행되는 다양한 연구자료를 확인해보세요</h3>
+                    <span class="more">더보기</span>
+                    <ul>
+                        <li class="pub_list">
+                            <a href="#">
+                                <img src="images/pub01.png" alt="2023 예술산업 특수분류 개선 연구" class="pub_img">
+                                <div class="pub_info">
+                                    <h4 class="pub_title">2023 예술산업 특수분류 개선 연구</h4>
+                                    <span class="pub_date">2023. 12</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pub_list">
+                            <a href="#">
+                                <img src="images/pub02.png" alt="「2023 미술시장조사(2022년도 기준)」 보고" class="pub_img">
+                                <div class="pub_info">
+                                    <h4 class="pub_title">「2023 미술시장조사(2022년도 기준)」 보고서</h4>
+                                    <span class="pub_date">2023. 12</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pub_list">
+                            <a href="#">
+                                <img src="images/pub03.png" alt="공연시장 마니아 관객 성향조사 보고서" class="pub_img">
+                                <div class="pub_info">
+                                    <h4 class="pub_title">공연시장 마니아 관객 성향조사 보고서</h4>
+                                    <span class="pub_date">2023. 12</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pub_list">
+                            <img src="images/pub04.png" alt="대학로 공연유통 및 관객선호 조사 보고서" class="pub_img">
+                            <div class="pub_info">
+                                <h4 class="pub_title">대학로 공연유통 및 관객선호 조사 보고서</h4>
+                                <span class="pub_date">2023. 12</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="family_site_bottom">
+            <div class="wrapper">
+                <ul class="family_site_list">
+                    <li class="culture_day"><a href="https://www.culture.go.kr/wday/index.do/" target="_blank"
+                            rel="noopener noreferrer">문화가있는날</a>
+                    </li>
+                    <li class="mcst"><a href="https://www.mcst.go.kr/kor/main.jsp" target="_blank"
+                            rel="noopener noreferrer">문화체욱관광부</a>
+                    </li>
+                    <li class="culture_pown"><a href="https://stat.mcst.go.kr/portal/main" target="_blank"
+                            rel="noopener noreferrer">문화셈터</a>
+                    </li>
+                    <li class="culture_portal"><a href="https://www.culture.go.kr/index.do" target="_blank"
+                            rel="noopener noreferrer">문화포털</a>
+                    </li>
+                    <li class="clean_policy"><a href="https://www.clean.go.kr/" target="_blank"
+                            rel="noopener noreferrer">부패공인신고</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer_wrap">
+                    <div class="site_info">
+                        <ul class="footer_info">
+                            <li><a href="#n" target="_blank" rel="noopener noreferrer">오시는길</a></li>
+                            <li class="privacy"><a href="#n" target="_blank" rel="noopener noreferrer">개인정보처리방침</a></li>
+                            <li><a href="#n" target="_blank" rel="noopener noreferrer">홈페이지불편신고</a></li>
+                            <li><a href="#n" target="_blank" rel="noopener noreferrer">이메일무단수집거부</a></li>
+                            <li><a href="#n" target="_blank" rel="noopener noreferrer">저작권방침</a></li>
+                            <li><a href="#n" target="_blank" rel="noopener noreferrer">재단로고다운로드</a></li>
+                        </ul>
+                        <address>서울특별시 종로구 대학로(연건동) 홍익대학교 대학로 캠퍼스 교육동 3층, 12층<br>우) 03082</address>
+                        <a href="tel:+82-02-702-2244" class="tel_no">Tel. 02-708-2224</a>
+                        <span class="copyright">COPYRIGHT 2024. Korea Art Management Service(KAMS).<br>All rights
+                            reserved</span>
                     </div>
-                    <div class="TheApro">
-                        <img src="" alt="">
-                        <h4>더아프로</h4>
-                        <p>2023 팸스살롱 포럼<br>② 지속가능한 공연예술: 다양성과 미래관객</p>
-                        <span class="notice_date">2024. 4. 15.</span>
-                    </div>
-                    <div class="Kart_market">
-                        <img src="" alt="">
-                        <h4>K-ART MARKET</h4>
-                        <p>[편집위원회] ‘포스트 코로나’ 시대 아트 컬렉팅의 현주소 - ‘아트 컬렉터 인사이트 2022’ 리포트를 중심으로 </p>
-                        <span class="notice_date">2024. 4. 15.</span>
+                    <div class="footer_logo">
+                        <a href="http://www.gokams.or.kr" target="_blank" rel="noopener noreferrer">하단로고</a>
                     </div>
                 </div>
-        </div>
-        </section>
-        <section class="kams_publish">
-            <h2>KAMS 최신발간자료</h2>
-            <h3>예술경영지원센터에서 발행되는 다양한 연구자료를 확인해보세요</h3>
-            <div>
-                <img src="" alt="" class="pub_img">
-                <h4 class="pub_title">2023 예술산업 특수분류 개선 연구</h4>
-                <span class="pub_date">2023. 12</span>
-            </div>
-            <div>
-                <img src="" alt="" class="pub_img">
-                <h4 class="pub_title">「2023 미술시장조사(2022년도 기준)」 보고서</h4>
-                <span class="pub_date">2023. 12</span>
-            </div>
-            <div>
-                <img src="" alt="" class="pub_img">
-                <h4 class="pub_title">공연시장 마니아 관객 성향조사 보고서</h4>
-                <span class="pub_date">2023. 12</span>
-            </div>
-            <div>
-                <img src="" alt="" class="pub_img">
-                <h4 class="pub_title">대학로 공연유통 및 관객선호 조사 보고서</h4>
-                <span class="pub_date">2023. 12</span>
-            </div>
-        </section>
+        </footer>
     </div>
-    <footer class="footer">
-        <div class="famliy_site_bottom">
-            <ul>
-                <li><a href="https://www.culture.go.kr/wday/index.do/" target="_blank"
-                        rel="noopener noreferrer">문화가있는날</a>
-                </li>
-                <li><a href="https://www.mcst.go.kr/kor/main.jsp" target="_blank" rel="noopener noreferrer">문화체욱관광부</a>
-                </li>
-                <li><a href="https://stat.mcst.go.kr/portal/main" target="_blank" rel="noopener noreferrer">문화셈터</a>
-                </li>
-                <li><a href="https://www.culture.go.kr/index.do" target="_blank" rel="noopener noreferrer">문화포털</a></li>
-                <li><a href="https://www.clean.go.kr/" target="_blank" rel="noopener noreferrer">부패공인신고</a></li>
-            </ul>
-        </div>
-        <div class="site_info">
-            <ul class="footer_info">
-                <li><a href="#n" target="_blank" rel="noopener noreferrer">오시는길</a></li>
-                <li><a href="#n" target="_blank" rel="noopener noreferrer">개인정보처리방침</a></li>
-                <li><a href="#n" target="_blank" rel="noopener noreferrer">홈페이지불편신고</a></li>
-                <li><a href="#n" target="_blank" rel="noopener noreferrer">이메일무단수집거부</a></li>
-                <li><a href="#n" target="_blank" rel="noopener noreferrer">저작권방침</a></li>
-                <li><a href="#n" target="_blank" rel="noopener noreferrer">재단로고다운르도</a></li>
-            </ul>
-            <address>서울특별시 종로구 대학로(연건동) 홍익대학교 대학로 캠퍼스 교육동 3층, 12층 우) 03082</address>
-            <a href="tel:+82-02-702-2244">Tel. 02-708-2224</a>
-            <span class="copyright">COPYRIGHT 2024. Korea Art Management Service(KAMS).<br>All rights reserved</span>
-            <a href="http://www.gokams.or.kr" target="_blank" rel="noopener noreferrer" class="footer_logo">하단로고</a>
-        </div>
-    </footer>
-</div>
 
-</body>
+    </body>
 
 </html>

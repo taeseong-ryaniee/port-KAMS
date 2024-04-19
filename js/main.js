@@ -48,20 +48,13 @@ $(document).ready(function () {
 			prevEl: ".visual_prev",
 		},
 	});
-});
-
-$(document).ready(function () {
-	const news_swiper = new Swiper(".culture_news .news_swiper", {
+	var news_swiper = new Swiper(".culture_news .news_swiper", {
 		slidesPerView: 4,
 		centeredSlides: false,
 		spaceBetween: 16,
-		pagination: {
-			el: ".swiper-pagination",
-			type: "fraction",
-		},
 		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
+			nextEl: ".news_btn_next",
+			prevEl: ".news_btn_prev",
 		},
 	});
 });
